@@ -48,7 +48,7 @@ body
     display: table
     clear: both
 header
-	min-height: 900px
+	min-height: 1160px
 	background: url(/img/Photo.jpg)
 .wraper 
 	width: 1200px
@@ -75,7 +75,7 @@ header
 	text-decoration: none
 	&:hover,&:focus
 		text-decoration: none
-		color: #fff
+		color: #ffc74a
 .menu__link_icon
 	background: url(/img/Search.png) no-repeat 11px 4px
 	width: 20px
@@ -106,9 +106,48 @@ header
 	margin-bottom: 245px
 	text-decoration: none
 	&:hover,&:focus
+		transition: all .8s
 		text-decoration: none
-		color: #000
+		color: #fff
 .header_bottom
 	font-size: 18px
 	color: #fff
+.photo
+	margin-top: -190px
+.city
+	@extend .menu__list
+.city__item
+	display: inline-block
+	position: relative
+	margin-right: 22px;
+	cursor: pointer
+	transition: all .5s
+	&:hover
+		.text
+			transition: all .5s
+			opacity: 1
+	&:last-child
+		margin-right: 0
+		margin-left: 2px
+.foto
+	img
+		width: 295px
+		height: 345px
+.text
+	position: absolute
+	color: #fff
+	width: 295px
+	height: 345px
+	top: 0
+	left: 0
+	text-align: center
+	opacity: 0
+.city_name
+	margin-top: 100px
+	font-size: 48px
+	line-height: 98px
+	color: #fff
+	font-family: "MontserratBold", sans-serif
+	margin-bottom: 60px
+
 @import "media" // Всегда в конце
