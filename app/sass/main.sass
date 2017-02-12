@@ -43,5 +43,72 @@ body
 	display: block
 	max-width: 100%
 	height: auto
-@import "index1/main"
+.clearfix:after 
+    content: ""
+    display: table
+    clear: both
+header
+	min-height: 900px
+	background: url(/img/Photo.jpg)
+.wraper 
+	width: 1200px
+	margin: 0 auto;
+.menu__list
+	margin: 0
+	padding: 0
+	list-style: none
+.header__top
+	padding: 60px 40px
+	margin-bottom: 150px
+.logo
+	float: left
+.menu
+	float: right
+	line-height: 61px
+.menu__item
+	display: inline-block
+.menu__link
+	display: block
+	font-size: 18px
+	padding: 0 15px
+	color: #fff
+	text-decoration: none
+	&:hover,&:focus
+		text-decoration: none
+		color: #fff
+.menu__link_icon
+	background: url(/img/Search.png) no-repeat 11px 4px
+	width: 20px
+	height: 20px
+.head-wrap
+	text-align: center
+.header__title
+	padding: 0px 260px
+.title
+	color: #fff
+	font-size: 92px
+	line-height: 92px
+	font-family: "MontserratBold", sans-serif
+	margin: 0
+.title-red
+	color: #ed6950
+.header__desc
+	font-size: 18px
+	color: #5d5d5c
+	margin-bottom: 38px
+.btn
+	color: #b98000
+	font-size: 14px
+	padding: 12px 30px
+	background-color: #ffc74a
+	border-radius: 25px
+	display: inline-block
+	margin-bottom: 245px
+	text-decoration: none
+	&:hover,&:focus
+		text-decoration: none
+		color: #000
+.header_bottom
+	font-size: 18px
+	color: #fff
 @import "media" // Всегда в конце
