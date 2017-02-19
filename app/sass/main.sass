@@ -6,19 +6,19 @@ $output-bourbon-deprecation-warnings: false //Ждём обновления node
 @import "vars"
 
 *::-webkit-input-placeholder
-	color: #666
+	color: #abb1ba
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: #abb1ba
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: #abb1ba
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: #abb1ba
 	opacity: 1
 
 body input:focus:required:invalid,
@@ -36,7 +36,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.75
-	font-family: $default-font
+	font-family: "MontserratRegular", sans-serif
 	overflow-x: hidden
 
 .img-responsive
@@ -103,16 +103,18 @@ header
 	background-color: #ffc74a
 	border-radius: 25px
 	display: inline-block
-	margin-bottom: 245px
 	text-decoration: none
 	&:hover,&:focus
 		transition: all .8s
 		text-decoration: none
 		color: #fff
+.header__btn
+	margin-bottom: 245px
 .header_bottom
 	font-size: 18px
 	color: #fff
 .photo
+	background-color: #f9f9fa
 	margin-top: -190px
 .city
 	@extend .menu__list
@@ -149,5 +151,6 @@ header
 	color: #fff
 	font-family: "MontserratBold", sans-serif
 	margin-bottom: 60px
-
+	
+@import "_sectionOne"
 @import "media" // Всегда в конце
